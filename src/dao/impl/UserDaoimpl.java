@@ -22,4 +22,9 @@ public class UserDaoimpl implements UserDao {
 		}
 	}
 
+	@Override
+	public void update(User user) {
+		System.out.println("执行修改用户信息的操作！");
+	}
+
 }
