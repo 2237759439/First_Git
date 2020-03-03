@@ -39,8 +39,8 @@ public class UserServlet extends HttpServlet {
 		// 页面上获得的数据所有都是String类型，而年龄是int
 		//所有我们需要对着数据进行强制(包装类)
 		int age = Integer.parseInt(req.getParameter("age"));
-		user.setName("张三");
-		user.setAge(20);
+		user.setName(name);
+		user.setAge(age);
 		us.save(user);
 	}
 
